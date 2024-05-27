@@ -33,7 +33,7 @@ app.use(bodyParser.urlencoded({limit: '30mb', extended: true}));
 app.use(cors());
 app.use("/assets", express.static(path.join(__dirname, "public/assets")));
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://your-production-domain.com'],
+  origin: ['http://localhost:3000', 'https://social-app-tawny-six.vercel.app/'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true // Enable credentials (if you need to send cookies or authorization headers)
