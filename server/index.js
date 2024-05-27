@@ -58,11 +58,11 @@ app.post("/posts", verifyToken, upload.single("picture"), createPost); // addPos
 app.use("/auth", authRoutes);
 app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
-
+const dateBaseLink="mongodb+srv://dummyuser:960918cui@cluster0.t3orjee.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 6001;
 mongoose
-  .connect(process.env.MONGO_URL, {
+  .connect(process.env.dateBaseLink, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
