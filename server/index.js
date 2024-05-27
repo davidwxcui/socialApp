@@ -62,7 +62,7 @@ const dateBaseLink="mongodb+srv://dummyuser:960918cui@cluster0.t3orjee.mongodb.n
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 6001;
 mongoose
-  .connect(process.env.dateBaseLink, {
+  .connect(dateBaseLink, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
