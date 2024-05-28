@@ -35,8 +35,7 @@ app.use("/assets", express.static(path.join(__dirname, "public/assets")));
 app.use(cors({
   origin: ['http://localhost:3000', 'https://social-app-server-ebon.vercel.app'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-  credentials: true // Enable credentials (if you need to send cookies or authorization headers)
+  credentials: true 
 }));
 /* FILE STORAGE */
 const storage = multer.diskStorage({
