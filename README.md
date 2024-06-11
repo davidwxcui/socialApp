@@ -31,8 +31,24 @@ Before you begin, ensure you have the following installed on your system:
 
 ## Installation
 
+
 1. Clone the repository:
 
    ```bash
    git clone https://github.com/your-username/social-media-app.git
    cd social-media-app
+Install client dependencies and start the client:
+
+bash
+Copy code
+cd client
+npm install
+npm start
+Install server dependencies and start the server:
+
+bash
+Copy code
+cd ../server
+npm install
+npm start
+This will start the client at http://localhost:3000 and the server at http://localhost:5000.
